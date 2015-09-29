@@ -1,0 +1,510 @@
+span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
+ address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, 
+ samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+ dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+ tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, 
+ figcaption, footer, header, hgroup, menu, nav, output, ruby, section, 
+ summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1;
+  margin:0; 
+  width:100%; 
+  height:100%; 
+  -webkit-text-size-adjust: 100%; 
+  background: #ffffff;
+  
+}
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+blockquote {
+  quotes: none;
+}
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  vertical-align:top;
+}
+a img {
+  border: none;
+}
+
+div, input, p, textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:link {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+a:visited {text-decoration:none;}
+
+
+@font-face {
+    font-family: 'muliLight';
+    src: url('fonts/muli-light-webfont.eot');
+    src: url('fonts/muli-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/muli-light-webfont.woff2') format('woff2'),
+         url('fonts/muli-light-webfont.woff') format('woff'),
+         url('fonts/muli-light-webfont.ttf') format('truetype'),
+         url('fonts/muli-light-webfont.svg#mulilight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muliRegular';
+    src: url('fonts/muli-regular-webfont.eot');
+    src: url('fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/muli-regular-webfont.woff2') format('woff2'),
+         url('fonts/muli-regular-webfont.woff') format('woff'),
+         url('fonts/muli-regular-webfont.ttf') format('truetype'),
+         url('fonts/muli-regular-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+  font-family: 'muliRegular', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 8px;
+  line-height: 35px;
+  padding-top: 23%;
+}
+
+@media (min-width: 530px) {
+  h1 {
+    font-size: 30px;
+    line-height: 48px;
+    padding-top: 26%;
+  }
+}
+
+@media (min-width: 980px) {
+  h1 {
+    font-size: 60px;
+    padding-bottom: 15px;
+  }
+}
+
+h2 {
+  font-family: 'muliLight', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+@media (min-width: 530px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 980px) {
+  h2 {
+    font-size: 53px;
+  }
+}
+
+h3 {
+  font-family: 'muliRegular', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding: 35px 0;
+}
+
+p {
+  font-family: 'muliRegular', sans-serif;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.rel {
+  position: relative;
+}
+
+#header {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+#menu {
+  width: 100%;
+  z-index: 20;
+  margin-top: 15px;
+  font-family: 'muliRegular', sans-serif;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: absolute;
+}
+
+@media (min-width: 530px) {
+  #menu {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  #menu {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 980px) {
+  #menu {
+    font-size: 20px;
+  }
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu a {
+  color: white;
+}
+
+#menu a:hover {
+  color: red;
+}
+
+
+#title {
+  position: absolute;
+  display: block;
+  z-index: 10;
+  width: 100%;
+}
+
+.parallax {
+  /*-webkit-perspective: 300px;
+  perspective: 200px;*/
+  height: 328px; 
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.pContainer {
+  height: 280px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#headerImg {
+  width: 200%;
+  /*margin: -39% 0 0 -85%;*/
+  height: auto;
+}
+
+#abstractImg {
+  width: 200%;
+  height: auto;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+}
+
+#examples {
+  height: auto;
+  background: grey;
+  padding-bottom: 35px;
+}
+
+#examples h3, #contact h3 {
+  color: #fff;
+}
+
+#exContainer {
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-hover {
+  display: inline-block;
+  padding: 5%;
+  width: 22%;
+  height: 22%;
+
+  webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+}
+
+.transition {
+    -webkit-transform: scale(1.3); 
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#about {
+  height: auto;
+  width: 80%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 25px 0 70px 0;
+}
+
+#resume {
+  height: auto;
+  padding: 15px 0 50px 0;
+}
+
+#resumeLink {
+  font-family: 'muliLight', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#resumeLink a {
+  color: #000;
+}
+
+#resumeLink a:hover {
+  color: red;
+}
+
+#contact {
+  width: 100%;
+  position: absolute;
+  display: block;
+  z-index: 10;
+  top: 0;
+}
+
+#contact a {
+  color: #fff;
+}
+
+#contact a:hover {
+  color: red;
+}
+
+#contactText {
+  font-family: 'muliLight', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  line-height: 30px;
+}
+  
+
+#footer {
+  position: relative;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  padding: 20px 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (min-width: 980px) {
+  .parallax {
+    height: 500px;
+  }
+}*/
+
+/*.parallax-group {
+  position: relative;
+  height: 500px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+*/
+/*.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-layer-back {
+  -webkit-transform: translateZ(-150px);  
+  transform: translateZ(-150px);
+  display: block;
+}
+
+@media (min-width: 980px) {
+  .parallax-layer-back {
+    -webkit-transform: translateZ(-300px);  
+    transform: translateZ(-300px);
+  }
+}*/
+
+/*#headerImg {
+  width: 350%;
+  margin: -39% 0 0 -85%;
+  height: auto;
+}
+
+@media (min-width: 980px) {
+  #headerImg {
+    width: 200%;
+    margin: -41% 0 0 -50%;
+    height: auto;
+  }
+}*/
+
+/*#group1 {
+  height: 120px;
+}
+
+@media (min-width: 530px) {
+  #group1 {
+    height: 192px;
+  }
+}
+
+@media (min-width: 768px) {
+  #group1 {
+    height: 207px;
+  }
+}*/
+
+
+
+
+
+
+
+/*.content .sidebar-expander {
+  width: 20px;
+  background-color: #484848;
+  position: fixed;
+  z-index: 100;
+  top: 70px;
+  bottom: 40px;
+}*/
+
+/*.sidebar-expander .horizontal-hamburger {
+  color: yellow;
+  text-align: center;
+  font-size: 18px;
+  position: fixed;
+  width: 20px;
+  top: 50%;
+}
+
+.sidebar-expander .horizontal-hamburger:hover {
+
+}*/
+/*
+#content #sidebar {
+  background-color: #484848;
+  position: fixed;
+  z-index: 1000;
+  top: 70px;
+  bottom: 40px;
+  width: 114px;
+  left: -96px;
+}
+
+#sidebar:hover {
+  left: 0;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 330px;
+  width: 114px;
+}
+
+#sidebar a {
+  color: white;
+}
+
+#sidebar #horizontal-hamburger {
+  color: yellow;
+  text-align: center;
+  font-size: 18px;
+  width: 20px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+}
+
+
+

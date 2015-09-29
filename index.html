@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="jquery.modal.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+   
+  </head>
+  
+
+  <body>
+    <div id="header">
+      <div id="menu">
+        <ul>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- END MENU -->
+
+      <div id="title">
+        <h1>Natalie Ricker</h1>
+        <h2> Web Developer</h2>
+      </div><!-- END TITLE -->
+
+      <div class="parallax">
+        <div id="group1" class="parallax-group">
+          <!-- <div class="parallax-layer parallax-layer-back"> -->
+            <img src="images/computer.jpg" id="headerImg" />
+          </div>
+
+      </div><!-- END PARALLAX -->
+
+    </div><!-- END HEADER -->
+
+
+    <div id="content">
+
+      <div id="about">
+        <h3>About</h3>
+        <p>Hi! My name is Natalie and I am a Web Developer based in Atlanta, GA. <br/><br/> 
+
+        I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP and MySQL. I enjoy learning and keeping up with the most up to date technology and am known for being very detail-oriented.</p>
+      </div><!-- END ABOUT -->
+
+      <div id="examples">
+        <h3>Examples</h3>
+          <div id="exContainer">
+            <a href="http://theofficeapts.com/" target="_blank"><img src="images/theoffice.jpg" class="img-hover" /></a>
+            <a href="http://1100south.com/" target="_blank"><img src="images/1100south.jpg" class="img-hover" /></a>
+            <a href="http://citizenatlanta.com/home2" target="_blank"><img src="images/citizenatlanta.jpg" class="img-hover" /></a>
+            <br/>
+            <a href="http://greenparkapts.com/dev" target="_blank"><img src="images/greenpark.jpg" class="img-hover" /></a>
+            <a href="http://havensouthtx.com/" target="_blank"><img src="images/havensouth.jpg" class="img-hover" /></a>
+            <a href="http://thedallas.com/" target="_blank"><img src="images/thedallas.jpg" class="img-hover" /></a>
+        </div><!-- END EXCONTAINER -->
+      </div><!-- END EXAMPLES -->
+
+      <div id="resume">
+        <h3>Resume</h3>
+        <div id="resumeLink"><a href="">Click Here...</a></div><br/>
+        <p>To View My Resume</p>
+      </div><!-- END RESUME -->
+
+      <div class="rel">
+        <div class="pContainer">
+            <img src="images/abstract.jpg" id="headerImg" />
+        </div><!-- END PCONTAINER -->
+
+        <div id="contact">
+          <h3>Contact</h3>
+          <div id="contactText">Get in touch with me by
+            email: <a href="mailto:nataliehricker@gmail.com">nataliehricker@gmail.com</a><br/>OR<br/> Connect with me on
+            Linked In: <a href="http://www.linkedin.com/in/natalieharte" target="_blank">linkedin.com/in/natalieharte</a>
+          </div>
+        </div><!-- END CONTACT -->
+      </div><!-- END REL -->
+
+    </div><!-- END CONTENT -->
+
+    <div id="footer">
+        <p>&copy;2015 Natalie Ricker  .  Web Developer  .  Atlanta, GA</p>
+    </div><!-- END FOOTER  -->
+
+    <script>
+    $(document).ready(function(){
+      $('.img-hover').hover(function() {
+          $(this).addClass('transition');
+          console.log("HEY");
+   
+      }, function() {
+          $(this).removeClass('transition');
+      });
+    });
+    </script>
+
+
+  </body>
+</html>

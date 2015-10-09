@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="jquery.modal.css" type="text/css" media="screen" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Natalie Ricker - Web Developer</title>
+
     <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+
+    <!-- JAVASCRIPTS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script src="jquery.modal.js" type="text/javascript" charset="utf-8"></script>
-    <script src="main.js" type="text/javascript" charset="utf-8"></script>
-   
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+
   </head>
   
-
   <body>
     <div id="header">
       <div id="menu">
         <ul>
-          <li><a href="#examples">Examples</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li><a href="#examples">Examples</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </div><!-- END MENU -->
 
@@ -26,13 +37,9 @@
         <h2> Web Developer</h2>
       </div><!-- END TITLE -->
 
-      <div class="parallax">
-        <div id="group1" class="parallax-group">
-          <!-- <div class="parallax-layer parallax-layer-back"> -->
+      <div id="headerContainer">
             <img src="images/computer.jpg" id="headerImg" />
-          </div>
-
-      </div><!-- END PARALLAX -->
+      </div>
 
     </div><!-- END HEADER -->
 
@@ -43,58 +50,71 @@
         <h3>About</h3>
         <p>Hi! My name is Natalie and I am a Web Developer based in Atlanta, GA. <br/><br/> 
 
-        I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP and MySQL. I enjoy learning and keeping up with the most up to date technology and am known for being very detail-oriented.</p>
+        I have a diverse set of skills, ranging from HTML, CSS and Javascript, all the way to PHP and MySQL. I have a Bachelor's Degree in Computer Science and I am a lifelong learner. In my spare time I enjoy taking aerial silk and yoga classes. See below for examples of my work.</p>
+
       </div><!-- END ABOUT -->
 
       <div id="examples">
         <h3>Examples</h3>
           <div id="exContainer">
             <a href="http://theofficeapts.com/" target="_blank"><img src="images/theoffice.jpg" class="img-hover" /></a>
-            <a href="http://1100south.com/" target="_blank"><img src="images/1100south.jpg" class="img-hover" /></a>
-            <a href="http://citizenatlanta.com/home2" target="_blank"><img src="images/citizenatlanta.jpg" class="img-hover" /></a>
-            <br/>
-            <a href="http://greenparkapts.com/dev" target="_blank"><img src="images/greenpark.jpg" class="img-hover" /></a>
-            <a href="http://havensouthtx.com/" target="_blank"><img src="images/havensouth.jpg" class="img-hover" /></a>
+            <a href="http://citizenatlanta.com/" target="_blank"><img src="images/citizenatlanta.jpg" class="img-hover" /></a>
+            <br class="mobileBreak" />
             <a href="http://thedallas.com/" target="_blank"><img src="images/thedallas.jpg" class="img-hover" /></a>
+            <br class="ipadBreak"/>
+            <a href="http://greenparkapts.com/dev" target="_blank"><img src="images/greenpark.jpg" class="img-hover" /></a>
+            <br class="mobileBreak" />
+            <a href="http://1100south.com/" target="_blank"><img src="images/1100south.jpg" class="img-hover" /></a>
+            <a href="http://havensouthtx.com/" target="_blank"><img src="images/havensouth.jpg" class="img-hover" /></a>
         </div><!-- END EXCONTAINER -->
       </div><!-- END EXAMPLES -->
 
+      <div id="contact">
+        <h3>Contact</h3>
+        <div id="contactText">Get in touch with me by
+          email: <a href="mailto:nataliehricker@gmail.com">nataliehricker@gmail.com</a><br/>OR<br/> Connect with me on
+          Linked In: <a href="http://www.linkedin.com/in/natalieharte" target="_blank">linkedin.com/in/natalieharte</a>
+        </div>
+      </div><!-- END CONTACT -->
+
       <div id="resume">
-        <h3>Resume</h3>
-        <div id="resumeLink"><a href="">Click Here...</a></div><br/>
-        <p>To View My Resume</p>
+          <a href="http://nataliericker.github.io/NatalieRicker_Resume.pdf">
+            <img src="images/paperResume.jpg" id="resumeImg" onmouseover="this.src='images/paperResumeHover.jpg'" onmouseout="this.src='images/paperResume.jpg'"/>
+          </a>
       </div><!-- END RESUME -->
 
-      <div class="rel">
-        <div class="pContainer">
-            <img src="images/abstract.jpg" id="headerImg" />
-        </div><!-- END PCONTAINER -->
-
-        <div id="contact">
-          <h3>Contact</h3>
-          <div id="contactText">Get in touch with me by
-            email: <a href="mailto:nataliehricker@gmail.com">nataliehricker@gmail.com</a><br/>OR<br/> Connect with me on
-            Linked In: <a href="http://www.linkedin.com/in/natalieharte" target="_blank">linkedin.com/in/natalieharte</a>
-          </div>
-        </div><!-- END CONTACT -->
-      </div><!-- END REL -->
-
-    </div><!-- END CONTENT -->
-
     <div id="footer">
-        <p>&copy;2015 Natalie Ricker  .  Web Developer  .  Atlanta, GA</p>
+        <p>Natalie Ricker  .  Web Developer  .  Atlanta, GA</p>
     </div><!-- END FOOTER  -->
 
-    <script>
+
+    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>    
+
+    <script type="text/javascript">
+
     $(document).ready(function(){
       $('.img-hover').hover(function() {
           $(this).addClass('transition');
-          console.log("HEY");
    
       }, function() {
           $(this).removeClass('transition');
       });
     });
+
+    $(function() {
+
+      var controller = new ScrollMagic.Controller();
+      var containerScene = new ScrollMagic.Scene({
+          triggerElement: '#headerContainer',
+          duration: 1000
+      })
+      .setPin('#headerImg')
+      // .addIndicators()
+      .addTo(controller);
+
+    });
+
+
     </script>
 
 

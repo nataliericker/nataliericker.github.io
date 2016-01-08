@@ -23,6 +23,11 @@
   
   <body>
     <div id="header">
+      <a href="javascript:showMenu()" id="menuBtn">
+        <div class="barLine"></div>
+        <div class="barLine"></div>
+        <div class="barLine"></div>
+      </a>
       <div id="menu">
         <ul>
           <li><a href="#about">About</a></li>
@@ -92,6 +97,8 @@
 
     <script type="text/javascript">
 
+    var menu = 0;
+
     $(document).ready(function(){
       $('.img-hover').hover(function() {
           $(this).addClass('transition');
@@ -114,6 +121,16 @@
 
     });
 
+    function showMenu() {
+      if(menu == 0) {
+        $('#menu').slideDown();
+        menu = 1;
+      }
+      else  {
+        $('#menu').slideUp();
+        menu = 0;
+      }
+    }
 
     </script>
 

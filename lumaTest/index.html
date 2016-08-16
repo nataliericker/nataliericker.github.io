@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<!-- TITLE OF WEBSITE -->
+	<title>Luma Contact Form</title>
+
+	<!-- STYLESHEET -->
+	<link href="style.css" rel='stylesheet' type="text/css" />
+
+	<!-- GOGGLE ANALYTICS -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	 
+	  ga('create', 'tracking ID goes here', 'auto');
+	  ga('send', 'pageview');
+	  ga('send', 'timing');
+	 
+	</script>
+</head>
+
+<body>
+
+	<div id="header">
+		<img src="images/logo.png" alt="Luma" id="logo" />
+	</div>
+	<div id="title">Welcome to the Luma Test Form</div>
+
+
+
+	<div id="formContainer">
+
+		<form id="form" name="form" action="submit.php" onsubmit="return onSubmit()" method="post">
+				
+			<input type="text" name="name" maxlength="30" value="Name" onfocus="if(this.value == 'Name')this.value = ''" onblur="if(this.value=='') this.value='Name'"> <br/>
+
+			<input type="text" name="email" maxlength="30" value="Email" onfocus="if(this.value == 'Email')this.value = ''" onblur="if(this.value=='') this.value='Email'"> <br/>
+
+			<input type="text" name="numChild" maxlength="30" value="Number of Children" onfocus="if(this.value == 'Number of Children')this.value = ''" onblur="if(this.value=='') this.value='Number of Children'"> <br/>
+
+			<input type="text" name="ageChild" maxlength="30" value="Average Age of Children" onfocus="if(this.value == 'Average Age of Children')this.value = ''" onblur="if(this.value=='') this.value='Average Age of Children'"> <br/>
+			
+			<input type="submit" value="SUBMIT" id="submit">		
+
+		</form>
+	</div><!-- END #formContainer -->
+
+</body>
+
+</html>
+					
